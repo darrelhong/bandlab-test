@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bandlab Test</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="posts.html">Posts</a></li>
+          <li><a href="audio.html">Audio</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <ul class="audio__list">
+          <li>
+            <audio src="new-wave-kit.ogg"></audio>
+            New wave kit
+            <button class="play__button" data-playing="false">
+              Play/Pause
+            </button>
+
+            <!-- volume slider -->
+            <input
+              type="range"
+              min="0"
+              max="2"
+              step="0.01"
+              value="1"
+              class="volume__slider"
+            />
+          </li>
+
+          <li>
+            <audio src="synth-organ.ogg"></audio>
+            Synth organ
+            <button class="play__button" data-playing="false">
+              Play/Pause
+            </button>
+
+            <!-- volume slider -->
+            <input
+              type="range"
+              min="0"
+              max="2"
+              step="0.01"
+              value="1"
+              class="volume__slider"
+            />
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="audio.js"></script>
+  </body>
+</html>
+ 
