@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bandlab Test</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="posts.html">Posts</a></li>
+          <li><a href="audio.html">Audio</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="posts">
+        <h1>Posts</h1>
+
+        <label>
+          Sort by
+          <select class="sort__select">
+            <option disabled selected value="default">Select an option</option>
+            <option value="title">Title</option>
+            <option value="id">Post ID</option>
+          </select>
+        </label>
+
+        <label>
+          Group by
+          <select class="group__select">
+            <option disabled selected value="default">Select an option</option>
+            <option value="user-id">User ID</option>
+          </select>
+        </label>
+
+        <ul class="posts__container">
+          <!-- This is where the posts will be rendered -->
+        </ul>
+      </section>
+    </main>
+
+    <script src="posts.js"></script>
+  </body>
+</html>
